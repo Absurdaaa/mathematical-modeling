@@ -1,0 +1,17 @@
+functions delta_pos=jiaodu(num1,num2,k,right_position,real_position)
+    % 边长
+    a=50;
+    % 计算夹角
+    A = real_position(k, :);
+    B = real_position(num1, :);
+    C = real_position(num2, :);
+    BA = sqrt(sum((A - B).^2));
+    CA = sqrt(sum((A - C).^2));
+    BC = sqrt(sum((B - C).^2));
+    cos1=(CA^2+BC^2-BA^2)/(2*CA*BC);
+
+    if cos1>0.5
+        
+    else
+    end
+end
